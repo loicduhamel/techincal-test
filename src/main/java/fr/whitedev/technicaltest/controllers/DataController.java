@@ -11,7 +11,24 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-// TODO: explain @RestController, @GetMapping, why @Autowired is missing, why final class, why private attribute
+/*
+Explain @RestController, @GetMapping, why @Autowired is missing, why final class, why private attribute
+
+- @RestController
+It is an annotation that is used to mark a class as a REST API controller. It combines @Controller which manages web requests and @ResponseBody which converts the results into JSON.
+
+- @GetMapping
+It's an annotation that is used to map a method to an HTTP GET request with a specific path (example: /albums).
+
+- Why @Autowired is missing?
+The @Autowired annotation is used to inject dependencies. The annotation is not present because DataService is provided by the constructor with the Lombok @AllArgsConstructor annotation.
+
+- Why final class?
+A class declared as final prevents inheritance. It is also used to optimize the Java compiler.
+
+- Why private attribute?
+A class declared as private ensures that the class can only be accessed within the class where it is called. Which prevents accidental modification of the exterior.
+*/
 
 @RestController
 @AllArgsConstructor
