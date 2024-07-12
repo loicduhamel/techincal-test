@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 
 @Service
 @AllArgsConstructor
-public final class DataService {
+public class DataService {
 
 	private UserService userService;
 	private AlbumService albumService;
