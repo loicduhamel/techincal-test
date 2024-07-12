@@ -10,7 +10,15 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-// TODO: explain @Service, why @Autowired on constructor
+/*
+Explain @Service, why @Autowired on constructor
+
+- @Service
+It is an annotation that is used to mark a class as a business service. The annotation allows Spring to inject the service into other beans like controllers.
+
+- Why @Autowired on constructor?
+The @Autowired annotation in the constructor allows Spring to automatically inject the dependencies needed for the service.
+*/
 
 @Service
 public class AlbumService {
