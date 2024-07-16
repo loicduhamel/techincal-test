@@ -5,6 +5,7 @@ import fr.whitedev.technicaltest.models.User;
 import fr.whitedev.technicaltest.models.UserAlbum;
 import fr.whitedev.technicaltest.services.DataService;
 import lombok.AllArgsConstructor;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -32,6 +33,7 @@ A class declared as private ensures that the class can only be accessed within t
 
 @RestController
 @AllArgsConstructor
+@CrossOrigin(origins = "http://localhost:4200")
 public final class DataController {
 
 	private DataService dataService;
